@@ -265,6 +265,10 @@ func NewRedisExporter(redisURI string, opts Options) (*Exporter, error) {
 			"used_memory_scripts":  "memory_used_scripts_bytes",
 			"maxmemory":            "memory_max_bytes",
 
+			"used_memory_dram":          "memory_used_dram_bytes",
+			"used_memory_pmem":          "memory_used_pmem_bytes",
+			"pmem_threshold":            "pmem_threshold",
+
 			"maxmemory_reservation":         "memory_max_reservation_bytes",
 			"maxmemory_desired_reservation": "memory_max_reservation_desired_bytes",
 
